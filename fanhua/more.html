@@ -1,9 +1,9 @@
-<div class="loading">
+ï»¿<div class="loading">
                     <div class="hidden">
                         <div class="horisontalpadding">
                             <ul class="products product-thumb-info-list">
 
-                             <--ÏëÒªÊµÏÖ¼ÓÔØµÄÄÚÈİÏÔÊ¾ÔÚÏÂÃæ¼´¿É,Í¬Ê±×¢ÒâÊ¹ÓÃli±êÇ©-->
+                             <--æƒ³è¦å®ç°åŠ è½½çš„å†…å®¹æ˜¾ç¤ºåœ¨ä¸‹é¢å³å¯,åŒæ—¶æ³¨æ„ä½¿ç”¨liæ ‡ç­¾-->
                                 <c:forEach var="company" items="${companys}">
                                     <li class="product searchproduct" style="width: 30%;"><a
                                             <div
@@ -15,7 +15,7 @@
                             </ul>
                         </div>
                     </div>
-                    <ul class="list">Êı¾İ¼ÓÔØÖĞ£¬ÇëÉÔºó...
+                    <ul class="list">æ•°æ®åŠ è½½ä¸­ï¼Œè¯·ç¨å...
                     </ul>
                     <div class="space30"></div>
                     <div style="display: none;" data-bind="visible: isProductsLoading">
@@ -24,17 +24,17 @@
                     <div class="container">
                         <div class="alert alert-info text-center">
                             <a href="javascript:;" onClick="loading.loadMore();"><div
-                                    class="more">¼ÓÔØ¸ü¶àÆóÒµ</div></a>
+                                    class="more">åŠ è½½æ›´å¤šä¼ä¸š</div></a>
                         </div>
                     </div>
                 </div>
                 
                 
                 <script>
-        var _content = []; //ÁÙÊ±´æ´¢liÑ­»·ÄÚÈİ
+        var _content = []; //ä¸´æ—¶å­˜å‚¨liå¾ªç¯å†…å®¹
         var loading = {
-            _default : 6, //Ä¬ÈÏÏÔÊ¾Í¼Æ¬¸öÊı
-            _loading : 6, //Ã¿´Îµã»÷°´Å¥ºó¼ÓÔØµÄ¸öÊı
+            _default : 6, //é»˜è®¤æ˜¾ç¤ºå›¾ç‰‡ä¸ªæ•°
+            _loading : 6, //æ¯æ¬¡ç‚¹å‡»æŒ‰é’®ååŠ è½½çš„ä¸ªæ•°
             init : function() {
                 var lis = $(".loading .hidden li");
                 $(".loading ul.list").html("");
@@ -54,7 +54,7 @@
                 for (var i = 0; i < loading._loading; i++) {
                     var target = _content.shift();
                     if (!target) {
-                        $('.loading .more').html("<p>È«²¿¼ÓÔØÍê±Ï...</p>");
+                        $('.loading .more').html("<p>å…¨éƒ¨åŠ è½½å®Œæ¯•...</p>");
                         break;
                     }
                     $(".loading ul.list").append(target);
